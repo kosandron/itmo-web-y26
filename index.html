@@ -10,71 +10,94 @@
 
 <body>
 <header>
-    <img src="images/icon.png" alt="Логотип">
+    <img src="images/icon.png" class="logo" alt="Логотип">
     <h1>BadgeShop</h1>
-    <blockquote>
-        <p>Значки: маленькие символы, большое значение</p>
-        <cite>Костыгов Андрей</cite>
-    </blockquote>
-    <p><a href="profile.html">Профиль</a></p>
+    
     <nav>
-        <ul>
-            <li><a href="#katalog">Каталог</a></li>
-            <li><a href="#orders">Заказы</a></li>
-            <li><a href="#buybox">Корзина</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-        </ul>
-    </nav>    
+        <a href="#katalog">Каталог</a>
+        <a href="#buybox">Корзина</a>
+        <a href="#orders">Заказы</a>        
+        <a href="#contacts">Контакты</a>
+        <a href="profile.html">Профиль</a>
+    </nav>
 </header>
 
 <section id="katalog">
     <h2>Каталог</h2>
-    <form method="get">
-        <label for="search">Поиск товара: </label>
-        <input type="text" placeholder="Введите что-то" id="search">
-        <input type="submit" value="Найти">
+    <form method="get" class="search_form">
+        <!-- <label for="search">Поиск товара: </label> -->
+        <input type="text" placeholder="Введите что-то" id="search" class="search_input">
+        <input type="submit" class="search_button" value="Найти">
     </form>
+    <div class="product_items"> 
+        <article class="product_list_item">
+            <img class="product_image" src="images/image1.jpg">
+            <p>Значок "Google"</p>
+            <p class="product_item_price">50 &#8381</p>
+            <button class="product_item_button">Выбрать</button>
+        </article>
+        <article class="product_list_item">
+            <img class="product_image" src="images/image2.png">
+            <p>Значок пионера</p>
+            <p class="product_item_price">50 &#8381</p>
+            <button class="product_item_button">Выбрать</button>
+        </article>
+        <article class="product_list_item">
+            <img class="product_image" src="images/image3.jpg">
+            <p>Значок "I'm fine"</p>
+            <p class="product_item_price">75 &#8381</p>
+            <button class="product_item_button">Выбрать</button>
+        </article>
+    </div>
+</section>
 
-    <article>
-        <img src="images/image1.jpg">
-        <p>Значок "Google"</p>
-        <p>Цена: 50 рублей</p>
-        <button>Выбрать</button>
-    </article>
-    <article>
-        <img src="images/image2.png">
-        <p>Значок пионера</p>
-        <p>Цена: 50 рублей</p>
-        <button>Выбрать</button>
-    </article>
-    <article>
-        <img src="images/image3.jpg">
-        <p>Значок "I'm fine"</p>
-        <p>Цена: 75 рублей</p>
-        <button>Выбрать</button>
-    </article>
+
+
+<section id="buybox">
+    <h2>Корзина</h2>
+    <div class="product_items"> 
+        <article class="product_list_item">
+            <img class="product_image" src="images/image3.jpg">
+            <!-- <div class=""></div> -->
+            <p>Значок "I'm fine"</p>
+            <p class="product_item_price">75 &#8381</p>
+            <p>Количество: 1</p>
+            <button class="product_item_button">Удалить</button>
+        </article>
+    </div>
 </section>
 
 <section id="orders">
     <h2>Заказы</h2>
-    
-</section>
-
-<section id="buybox">
-    <h2>Корзина</h2>
-    <article>
-        <img src="images/image3.jpg">
-        <p>Значок "I'm fine"</p>
-        <p>Цена: 75 рублей</p>
-        <p>Количество: 1</p>
-        <button>Удалить</button>
-    </article>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Местоположение</th>
+                <th>Дата последнего обновления</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>1</td>
+              <td>Якутск</td>
+              <td>25.09.2024</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Москва</td>
+              <td>23.09.2024</td>
+            </tr>
+          </tbody>
+    </table>
 </section>
 
 <section id="contacts">
     <h2>Наши контакты</h2>
-    <p>Телефон: +7123456789</p>
-    <p><a href="https://t.me/kosandron">Telegram</a></p>
+    <ul>
+        <li class=".contacts_list_item">Телефон: +7123456789</li>
+        <li class=".contacts_list_item"><a href="https://t.me/kosandron">Telegram</a></li>
+    </ul>
 </section>
 
 <footer>
