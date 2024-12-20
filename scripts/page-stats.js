@@ -12,7 +12,7 @@
         
         console.log(currentPage)
         menuItems.forEach(item => {
-            if (currentPage.includes(item.getAttribute('href'))) {
+            if (currentPage.endsWith('/') && item.getAttribute('href').endsWith("index.html") || currentPage.includes(item.getAttribute('href'))) {
                 console.log(item.getAttribute('href'))
                 item.classList.add('header__nav-item--active');
             }
