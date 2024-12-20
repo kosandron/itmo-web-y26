@@ -1,7 +1,7 @@
 (() => {
     window.addEventListener('load', () => {
         document.getElementsByClassName("load_time")[0].innerHTML = 
-            `Страница загружена за ${performance.mark('pageEnd').startTime.toFixed(2)} мс`;
+            `Страница загружена за ${performance.now().toFixed(2)} мс`;
     });
 })();
 
@@ -13,7 +13,7 @@
         console.log(currentPage)
         menuItems.forEach(item => {
             console.log(item.getAttribute('href'))
-            if (currentPage.endsWith('/') && item.getAttribute('href').endsWith("index.html") || currentPage.includes(item.getAttribute('href'))) {
+            if (currentPage.endsWith("/") && item.getAttribute('href').endsWith("index.html") || currentPage.includes(item.getAttribute('href'))) {
                 
                 item.classList.add('header__nav-item--active');
             }
