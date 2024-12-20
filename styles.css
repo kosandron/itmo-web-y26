@@ -1,0 +1,133 @@
+body {
+    background-color: gray;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+    color:chocolate;
+    font-size: 180px;
+    background-color: darkgray;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: right;
+    padding: 20px
+}
+
+nav {
+    display: flex;
+    background-color: darkgray;
+    border-style: solid;
+}
+
+nav a {
+    float: left;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    padding: 14px 16px;
+    flex: 1;
+    text-decoration: none;
+}
+
+h2 {
+    color: black;
+}
+
+footer {
+    background-color: darkgray;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 60px;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    border-radius: 7px;
+}
+
+.contacts_list_item {
+    font-size: 30px;
+}
+
+
+.product_items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.product_image {
+    box-shadow: 10px 10px 5px gray;
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.product_list_item {
+    border-style: solid;
+    border-radius: 5px;
+    width: 180px;
+    padding: 10px;
+} 
+
+button {
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: burlywood;
+}
+
+.product_item_button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    height: 30px;
+}
+
+.product_item_price {
+    font-weight: bold;
+}
+
+.search_form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+.search_input {
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    background: #F9F0DA;
+    color: black;
+}
+.search_button {
+    position: absolute; 
+    top: 1px;
+    left: 320px;
+    width: 70px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+}
