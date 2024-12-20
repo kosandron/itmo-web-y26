@@ -109,13 +109,13 @@ form {
     max-width: 100px;
 }
 
-form label {
+.form__label {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-form input, form select, form textarea, form button {
+.form__input, .form__select, .form__textarea, .form__button {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -123,13 +123,13 @@ form input, form select, form textarea, form button {
     font-size: 14px;
 }
 
-form textarea {
+.form__textarea {
     resize: vertical;
     min-height: 100px;
     min-width: 200px;
 }
 
-form button {
+.form__button {
     background-color: #5cb85c;
     color: white;
     font-size: 16px;
@@ -139,7 +139,7 @@ form button {
     transition: background-color 0.3s;
 }
 
-form button:hover {
+.form__button:hover {
     background-color: #4cae4c;
 }
 
