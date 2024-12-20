@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const comment = { text, category };
 
         displayComment(comment);
-        var comments = JSON.parse(localStorage.getItem("comments")) 
+        var comments = JSON.parse(localStorage.getItem("comments")) || []
         comments.unshift(comment);
         localStorage.setItem("comments", JSON.stringify(comments));
-        
+
         form.reset();
     });
 
