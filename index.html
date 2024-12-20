@@ -5,76 +5,143 @@
     <meta charset="utf-8"/>
     <meta name="description" content="Site for buying badges">
     <link rel="shortcut icon" href="images/icon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>    
+    <script src="scripts/page-stats.js"></script>
+    
 </head>
 
 <body>
 <header>
-    <img src="images/icon.png" alt="Логотип">
-    <h1>BadgeShop</h1>
-    <p><a href="profile.html">Профиль</a></p>
+    <div class="header__top">
+        <img src="images/icon.png" class="header__top-logo" alt="Логотип">
+        <h1>BadgeShop</h1>
+    </div>
     <nav>
-        <ul>
-            <li><a href="#katalog">Каталог</a></li>
-            <li><a href="#orders">Заказы</a></li>
-            <li><a href="#buybox">Корзина</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-        </ul>
-    </nav>    
+        <a href="index.html" class="header__nav-item">Каталог</a>
+        <a href="comments.html" class="header__nav-item">Комментарии</a> 
+        <a href="prof.html" class="header__nav-item">Профиль</a>
+    </nav>
 </header>
-
-<section id="katalog">
-    <h2>Каталог</h2>
-    <form method="get">
-        <label for="search">Поиск товара: </label>
-        <input type="text" placeholder="Введите что-то" id="search">
-        <input type="submit" value="Найти">
-    </form>
-
-    <article>
-        <img src="images/image1.jpg">
-        <p>Значок "Google"</p>
-        <p>Цена: 50 рублей</p>
-        <button>Выбрать</button>
-    </article>
-    <article>
-        <img src="images/image2.png">
-        <p>Значок пионера</p>
-        <p>Цена: 50 рублей</p>
-        <button>Выбрать</button>
-    </article>
-    <article>
-        <img src="images/image3.jpg">
-        <p>Значок "I'm fine"</p>
-        <p>Цена: 75 рублей</p>
-        <button>Выбрать</button>
-    </article>
-</section>
-
-<section id="orders">
-    <h2>Заказы</h2>
+<main>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <h3>Скидки</h3>
+                    <div class="table-container">
+                        <div class="table">
+                            <div class="table__header">Количество значков</div>
+                            <div class="table__header">Скидка</div>
     
-</section>
+                            <div class="table__row">5</div>
+                            <div class="table__row">10%</div>
+    
+                            <div class="table__row">10</div>
+                            <div class="table__row">15%</div>
+    
+                            <div class="table__row">20</div>
+                            <div class="table__row">20%</div>
+                        </div>
+                    </div>
+                    <p>Скидки действуют при покупке от определённого количества значков!</p>
+                </div>
+            </div>
+                <div class="swiper-slide">
+                    <div class="newyear-slide">
+                        <img class="slide-image" src="images/newyear.jpg">
+                        <p>Новогодняя коллекция</p>
+                    </div>
+                </div>
+            <div class="swiper-slide">
+                <div class="newyear-slide">
+                        <img class="slide-image" src="images/backtothefuture.jpg">
+                        <p>Новая коллекция</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
 
-<section id="buybox">
-    <h2>Корзина</h2>
-    <article>
-        <img src="images/image3.jpg">
-        <p>Значок "I'm fine"</p>
-        <p>Цена: 75 рублей</p>
-        <p>Количество: 1</p>
-        <button>Удалить</button>
-    </article>
-</section>
 
-<section id="contacts">
-    <h2>Наши контакты</h2>
-    <p>Телефон: +7123456789</p>
-    <p><a href="https://t.me/kosandron">Telegram</a></p>
-</section>
+    <section id="katalog">
+        <form method="get" class="search-form">
+            <input type="text" placeholder="Введите что-то" id="search" class="search-form__input">
+            <input type="submit" class="search-form__button" value="Найти">
+        </form>
+        <div class="product_items"> 
+            <article class="product-item">
+                <img class="product-item__image" src="images/image1.jpg">
+                <p>Значок "Google"</p>
+                <p class="product-item__price">50 &#8381</p>
+                <button class="product-item__button">Выбрать</button>
+            </article>
+            <article class="product-item">
+                <img class="product-item__image" src="images/image2.png">
+                <p>Значок пионера</p>
+                <p class="product-item__price">50 &#8381</p>
+                <button class="product-item__button">Выбрать</button>
+            </article>
+            <article class="product-item">
+                <img class="product-item__image" src="images/image3.jpg">
+                <p>Значок "I'm fine"</p>
+                <p class="product-item__price">75 &#8381</p>
+                <button class="product-item__button">Выбрать</button>
+            </article>
+            <article class="product-item">
+                <img class="product-item__image" src="images/image1.jpg">
+                <p>Значок "Google"</p>
+                <p class="product-item__price">50 &#8381</p>
+                <button class="product-item__button">Выбрать</button>
+            </article>
+            <article class="product-item">
+                <img class="product-item__image" src="images/image2.png">
+                <p>Значок пионера</p>
+                <p class="product-item__price">50 &#8381</p>
+                <button class="product-item__button">Выбрать</button>
+            </article>
+            <article class="product-item">
+                <img class="product-item__image" src="images/image3.jpg">
+                <p>Значок "I'm fine"</p>
+                <p class="product-item__price">75 &#8381</p>
+                <button class="product-item__button">Выбрать</button>
+            </article>
+            <article class="product-item">
+                <img class="product-item__image" src="images/image1.jpg">
+                <p>Значок "Google"</p>
+                <p class="product-item__price">50 &#8381</p>
+                <button class="product-item__button">Выбрать</button>
+            </article>
+            <article class="product-item">
+                <img class="product-item__image" src="images/image2.png">
+                <p>Значок пионера</p>
+                <p class="product-item__price">50 &#8381</p>
+                <button class="product-item__button">Выбрать</button>
+            </article>
+            <article class="product-item">
+                <img class="product-item__image" src="images/image3.jpg">
+                <p>Значок "I'm fine"</p>
+                <p class="product-item__price">75 &#8381</p>
+                <button class="product-item__button">Выбрать</button>
+            </article>
+        </div>
+    </section>
 
+</main>
 <footer>
     <p>BadgeShop 2024 Костыгов Андрей</p>
     <p>Магазин значков</p>
+    <p class="load_time"></p>
 </footer>
+
+<script type="module" src="scripts/swipper.js"></script>
 </body>
 </html>

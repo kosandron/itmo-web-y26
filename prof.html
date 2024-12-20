@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <script src="scripts/profile.js"></script>
+    <script src="scripts/page-stats.js"></script>
+    <link rel="stylesheet" href="css/prof.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__top">
+            <img src="images/icon.png" class="header__top-logo" alt="Логотип">
+            <h1>BadgeShop</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="header__nav-item">Каталог</a>
+            <a href="comments.html" class="header__nav-item">Комментарии</a>   
+            <a href="prof.html" class="header__nav-item">Профиль</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="preloader">
+            <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading..." class="preloader__image">
+        </div>
+
+        <div class="profile">
+            <h2 id="profile__name"></h2>
+            <p><strong>Username:</strong> <span id="profile__username"></span></p>
+            <p><strong>Email:</strong> <span id="profile__email"></span></p>
+            <p><strong>Address:</strong> <span id="profile__address"></span></p>
+            <p><strong>Phone:</strong> <span id="profile__phone"></span></p>
+            <p><strong>Website:</strong> <span id="profile__website"></span></p>
+            <p><strong>Company:</strong> <span id="profile__company"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>BadgeShop 2024 Костыгов Андрей</p>
+        <p>Магазин значков</p>
+        <p class="load_time"></p>
+    </footer>
+</body>
+
+</html>
